@@ -24,7 +24,7 @@ describe('SalvarProduto', () => {
         expect(produto).toBeDefined();
         expect(produto.codigo).toBeDefined();
         expect(produtoCriacaoDto.descricao).toBe(produto.descricao);
-        expect(produtoCriacaoDto.preco + 5).toBe(produto.preco);
+        expect(produtoCriacaoDto.preco).toBe(produto.preco);
 
     })
 

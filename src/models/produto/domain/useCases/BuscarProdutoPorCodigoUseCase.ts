@@ -6,7 +6,7 @@ import { Produto } from "@prisma/client";
 
 export class BuscarProdutoPorCodigoUseCase {
 
-    constructor() { }
+    constructor(private produtoRepository: ProdutoRepository) { }
 
     async execute(codigo: number): Promise<Produto | null> {
         try {

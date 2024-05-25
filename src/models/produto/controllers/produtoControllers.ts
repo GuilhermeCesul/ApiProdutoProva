@@ -50,7 +50,7 @@ export const produtoControllers = (fastify: FastifyInstance,
 
     })
 
-    fastify.put('/alterarProduto/:codigo', async (request, reply) => {
+    fastify.put('/alterarProduto/:codigo', async (request: any, reply) => {
 
         try {
             const codigo = request.params.codigo;
@@ -68,7 +68,7 @@ export const produtoControllers = (fastify: FastifyInstance,
 
     })
 
-    fastify.delete('/deletarProduto/:codigo', async (request, reply) => {
+    fastify.delete('/deletarProduto/:codigo', async (request: any, reply) => {
 
         try {
             const codigo = request.params.codigo;

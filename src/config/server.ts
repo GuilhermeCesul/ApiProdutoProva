@@ -1,5 +1,6 @@
 import fastify from "fastify";
-import { iesRoutes } from "../models/produto/routes/iesRoutes";
+import { produtosRoutes } from "../models/produto/routes/produtoRoutes";
+
 
 const server = fastify()
 const PORT = 3333;

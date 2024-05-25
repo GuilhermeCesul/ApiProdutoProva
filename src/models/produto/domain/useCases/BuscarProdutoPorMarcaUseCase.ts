@@ -8,7 +8,7 @@ export class BuscarProdutoPorMarcaUseCase {
 
     constructor(private produtoRepository: ProdutoRepository) { }
 
-    execute(marca: string): Promise<Produto | null> {
+    async execute(marca: string): Promise<Produto | null> {
         try {
 
             return await this.produtoRepository.buscarProdutoPorMarca(marca)
